@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+ThunderStorm.com
+</title>
+</head>
+<body>
+<div class="topnav" style="text-align:center;">
+<img src="Search.png" height="25px" width="25px" style="margin:12px;float:right;"></img>
+<input class="search"required placeholder ="Search This Website" type = "text" style = "border-radius: 10px;text-align:center;width:200px;height:30px;font-size:20px;margin: 8px;float:right;">
+</input>
+<span style="text-align:center;font-family:Lucida Calligraphy;">
+<i><b>
+<label class="label1" style="font-size:36px;padding : 20px 0px 20px 260px;">
+Thunder Tech
+</label>
+</i></b>
+</span>
+</div>
+<div class="dropdown">
+<button class="dropbtn" onclick="openNav()">Menu</button>
+<div id="myDropdown" class="dropdown-content">
+<a href="index.html">Home</a>
+<a href="HTML2.html">rdg</a>
+<a href="HTML3.html">rg</a>
+<a href="HTML4.html">fg</a>
+</div>
+</div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <img src="Cyber ROG.png" height="250" width="250"></img>
+  <a href="index.html">Home</a>
+  <a href="HTML2.html">Profile</a>
+  <a href="HTML3.html">Forums</a>
+  <a href="HTML4.html">About</a>
+  <a href="#" class="logout">Logout</a>
+</div>
+<style>
+.search:hover, .search:focus, .search.focus {
+  border-color: transparent;
+}
+.dropbtn {
+-webkit-backdrop-filter: blur(20px);
+backdrop-filter: blur(20px);
+background-color: rgba(0,0,0,0.3);
+color:white;
+padding: 15px;
+font-size: 16px;
+border: none;
+}
+.search {
+border: none;
+}
+.dropbtn:hover, .dropbtn:focus {
+border: none;
+}
+.dropdown {
+position: relative;
+display: inline-block;
+position: fixed;
+top: 0;
+background-color: rgba(0,255,0,.3);
+}
+.topnav {
+-webkit-backdrop-filter: blur(20px);
+backdrop-filter: blur(20px);
+background-color: rgba(0,0,0,.3);
+position: fixed;
+top: 0;
+width: 100%;
+overflow: hidden;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+-webkit-backdrop-filter: blur(20px);
+backdrop-filter: blur(20px);
+background-color: rgba(0,0,0,.2);
+min-width: 160px;
+box-shadow: 0px 4px 16px 0px; rgba(0,0,0,0.2)
+z-index: 1;
+}
+.dropdown-content a {
+background-color: rgba(0,0,0,0.3);
+color: white;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+.label1 {
+color: rgb(255,255,255);
+}
+.dropdown-content a:hover {
+-webkit-backdrop-filter: blur(20px);
+backdrop-filter: blur(20px);
+background-color: rgba(255,255,255,0.3);
+color: black;
+border-color : rgb(255,255,255);
+border-width : 1px;
+border-style : solid;
+}
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+.show {
+display:block;
+}
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+border-color : rgb(255,255,255);
+border-width : 1px;
+border-style : solid;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  background-color: rgba(0,0,0,0.4);/* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 50px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+-webkit-backdrop-filter: blur(20px);
+backdrop-filter: blur(20px);
+background-color: rgba(255,255,255,0.4);
+color: black;
+border-color : rgb(255,255,255);
+border-width : 1px;
+border-style : solid;
+}
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  font-size: 36px;
+  margin-left: 50px;
+padding: 4px 16px 4px 16px;
+z-index: 1
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  .sidenav img {height: 100px;width:100px ;}
+}
+</style>
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</body>
+</html>
