@@ -8,70 +8,62 @@ CyberStorm.com
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
 	<link rel="icon" type="image/png" href="images/img-02.jpg"/>
-<script data-ad-client="ca-pub-8992199582848792" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
-<body style="background-color: rgb(220,220,220);">
+<body>
 <div class="topnav" style="text-align:center;">
-<div align="center" style="font-family:Lucida Calligraphy;">
+<img src="Search.png" height="25px" width="25px" style="margin:12px;float:right;"></img>
+<input class="search"required placeholder ="Search This Website" type = "text" style = "border-radius: 10px;text-align:center;width:200px;height:30px;font-size:20px;margin: 8px;float:right;">
+</input>
 <span style="text-align:center;font-family:Lucida Calligraphy;">
 <i><b>
-<label class="label1" style="font-size:36px;padding : 20px 0px 20px 0px;">
+<label class="label1" style="font-size:36px;padding : 20px 0px 20px 260px;">
 Cyber Storm
 </label>
 </i></b>
 </span>
 </div>
-</div>
 <div class="dropdown">
 <button class="dropbtn" onclick="openNav()">Menu</button>
+<div id="myDropdown" class="dropdown-content">
+<a href="index.html">Home</a>
+<a href="HTML2.html">rdg</a>
+<a href="HTML3.html">rg</a>
+<a href="HTML4.html">fg</a>
+</div>
 </div>
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <img src="Cyber ROG.png" height="250" width="250"></img>
-  <a href ="index.html" class="links">Home</a>
-  <a href="HTML2.html" class="links">Profile</a>
-  <a href="HTML3.html" class="links">Forums</a>
-  <a href="HTML4.html" class="links">About</a>
-  <a href="Login.html" class="login links">Login</a>
-</div>
+  <a href="index.html">Home</a>
+  <a href="HTML2.html">Profile</a>
+  <a href="HTML3.html">Forums</a>
+  <a href="HTML4.html">About</a>
+  <a href="login.html" class="login">Login</a>
 </div>
 <style>
 .search:hover, .search:focus, .search.focus {
-border-color: transparent;
-outline:none;
+  border-color: transparent;
 }
 .dropbtn {
 -webkit-backdrop-filter: blur(20px);
 backdrop-filter: blur(20px);
 background-color: rgba(0,0,0,0.3);
 color:white;
-padding: 16px 9px 15px 9px;
+padding: 15px;
 font-size: 16px;
 border: none;
 }
 .search {
-  width:300px;
-  margin: 8px;
-  height: 40px;
-  font-size: 16px;
-  font-weight: 400;
-  color: rgb(0,0,0);
-  background: rgba(0, 0, 0, 0.15);
-  border: none;
-  box-shadow: none;
-  border-radius: 0;
-  padding-left: 15px;
+border: none;
 }
 .dropbtn:hover, .dropbtn:focus {
 border: none;
-outline:none;
 }
 .dropdown {
 position: relative;
 display: inline-block;
 position: fixed;
 top: 0;
-left:0;
 background-color: rgba(0,255,0,.3);
 }
 .topnav {
@@ -80,7 +72,6 @@ backdrop-filter: blur(20px);
 background-color: rgba(0,0,0,.3);
 position: fixed;
 top: 0;
-left:0;
 width: 100%;
 overflow: hidden;
 }
@@ -131,23 +122,22 @@ border-width : 1px;
 border-style : solid;
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
-  background-color: rgba(0,0,0,0.5);/* Black*/
+  background-color: rgba(0,0,0,0.4);/* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 0px; /* Place content 60px from the top */
+  padding-top: 50px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
 /* The navigation menu links */
-.sidenav .links {
-padding: 8px 8px 8px 32px;
-text-decoration: none;
-font-size: 25px;
-color: white;
-display: block;
-
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
 }
 /* When you mouse over the navigation links, change their color */
-.sidenav .links:hover {
+.sidenav a:hover {
 -webkit-backdrop-filter: blur(20px);
 backdrop-filter: blur(20px);
 background-color: rgba(255,255,255,0.4);
@@ -158,35 +148,19 @@ border-style : solid;
 }
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
-position: absolute;
-font-size: 36px;
-margin-left: 0px;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  font-size: 36px;
+  margin-left: 50px;
 padding: 4px 16px 4px 16px;
 z-index: 1
-display: block;
-text-decoration: none;
-color: white;
-}
-.sidenav .closebtn:hover {
--webkit-backdrop-filter: blur(20px);
-backdrop-filter: blur(20px);
-background-color: rgba(255,255,255,0.4);
-color: black;
-border-color : rgb(255,255,255);
-border-width : 1px;
-border-style : solid;
 }
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
   .sidenav img {height: 100px;width:100px ;}
-}
-@media screen and (max-width: 600px) {
-.search {
-width: 150px;
-background-color: blue;
-}
 }
 </style>
 <script>
@@ -219,27 +193,13 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
-<span  style="font-family:Sergoe">
-<p style = "color : rgb(50,50,50);font-size:70px;" align = "center">
-Latest Articles
-</p>
-</span>
 <br>
-<!--Comment Here-->
-<div style="text-align:center;">
-<input class="search"required placeholder ="Search This Website" type = "text">
-</input>
-<img src="Search.png" height="22px" width="22px" style="margin:0px;"></img>
-</div>
-<font face ="Lucida Calligraphy" size = "6">
 <br>
-Hi,
 <br>
-<script data-ad-client="ca-pub-8992199582848792" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<br>
-I am Shivansh Jain
+<p align="center">
+<font size="48" face="Minion Pro,Calibri">
+
 </font>
-a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>
-<footer style="background-color:rgb(220,220,220);" align="center">Cyberstorm - All Rights Reserved</footer>
+</p>
 </body>
 </html>
