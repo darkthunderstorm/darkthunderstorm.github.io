@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+CyberStorm.com
+</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/png" href="images/img-02.jpg"/>
+<script data-ad-client="ca-pub-8992199582848792" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body style="background-color: rgb(220,220,220);">
+<div class="topnav">
+<div align="center" style="font-family:Lucida Calligraphy;">
+<span style="text-align:center;font-family:Lucida Calligraphy;">
+<i><b>
+<label class="label1" style="font-size:36px;padding : 20px 0px 20px 0px;">
+Cyber Storm
+</label>
+</i></b>
+</span>
+<a href="index.html" class="searchic" style="text-decoration: none;color: black;">
+  <img src="Search.png" height="22px" width="22px" style="margin:10px;">
+  </img>
+</a>
+</div>
+</div>
+<div class="dropdown">
+<button class="dropbtn" onclick="openNav()">Menu</button>
+</div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <img src="Cyber ROG.png" height="250" width="250"></img>
+  <a href ="index.html" class="links">Home</a>
+  <a href="HTML2.html" class="links">Profile</a>
+  <a href="HTML3.html" class="links">Forums</a>
+  <a href="HTML4.html" class="links">About</a>
+  <a href="Login.html" class="login links">Login</a>
+</div>
+</div>
+<style>
+.search:hover, .search:focus, .search.focus {
+border-color: transparent;
+outline:none;
+}
+.dropbtn {
+-webkit-backdrop-filter: blur(20px);
+backdrop-filter: blur(20px);
+background-color: rgba(0,0,0,0.3);
+color:white;
+padding: 16px 9px 15px 9px;
+font-size: 16px;
+border: none;
+}
+.searchic {
+	float: right;
+}
+.search {
+  width:300px;
+  margin: 8px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(0,0,0);
+  background: rgba(0, 0, 0, 0.15);
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding-left: 15px;
+}
+.dropbtn:hover, .dropbtn:focus {
+border: none;
+outline:none;
+}
+.dropdown {
+position: relative;
+display: inline-block;
+position: fixed;
+top: 0;
+left:0;
+background-color: rgba(0,255,0,.3);
+}
+.topnav {
+-webkit-backdrop-filter: blur(20px);
+backdrop-filter: blur(20px);
+background-color: rgba(0,0,0,.3);
+position: fixed;
+top: 0;
+left:20;
+width: 100%;
+overflow: hidden;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+-webkit-backdrop-filter: blur(20px);
+backdrop-filter: blur(20px);
+background-color: rgba(0,0,0,.2);
+min-width: 160px;
+box-shadow: 0px 4px 16px 0px; rgba(0,0,0,0.2)
+z-index: 1;
+}
+.dropdown-content a {
+background-color: rgba(0,0,0,0.3);
+color: white;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+.label1 {
+color: rgb(255,255,255);
+}
+.dropdown-content a:hover {
+-webkit-backdrop-filter: blur(20px);
+backdrop-filter: blur(20px);
+background-color: rgba(255,255,255,0.3);
+color: black;
+border-color : rgb(255,255,255);
+border-width : 1px;
+border-style : solid;
+}
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+.show {
+display:block;
+}
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+border-color : rgb(255,255,255);
+border-width : 1px;
+border-style : solid;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  background-color: rgba(0,0,0,0.5);/* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 0px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav .links {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 25px;
+color: white;
+display: block;
+
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav .links:hover {
+-webkit-backdrop-filter: blur(20px);
+backdrop-filter: blur(20px);
+background-color: rgba(255,255,255,0.4);
+color: black;
+border-color : rgb(255,255,255);
+border-width : 1px;
+border-style : solid;
+}
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+position: absolute;
+font-size: 36px;
+margin-left: 0px;
+padding: 4px 16px 4px 16px;
+z-index: 1
+display: block;
+text-decoration: none;
+color: white;
+}
+.sidenav .closebtn:hover {
+-webkit-backdrop-filter: blur(20px);
+backdrop-filter: blur(20px);
+background-color: rgba(255,255,255,0.4);
+color: black;
+border-color : rgb(255,255,255);
+border-width : 1px;
+border-style : solid;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+.fa {
+  padding: 20px;
+  font-size:30px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%; 
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  background: purple;
+  color: white;
+}
+.fa-twitter {
+  background: rgb(50,150,255);
+  color: white;
+}
+.fa-youtube {
+  background: red;
+  color: white;
+}
+</style>
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<!--Comment Here-->
+<div style="text-align:right;">
+<a href="#" style="text-decoration: none;color: black;">
+  <img src="Search.png" height="22px" width="22px" style="margin:0px;">
+  </img>
+</a>
+</div>
+<br>
+<br>
+<p class="heading" align="center">
+<font class="heading" size="70" face="Minion Pro,Calibri">
+Top 5 Budget Processors For Gaming and Productivity
+</font>
+</p>
+<p align="center">
+<img src="AMD-Ryzen-4000-APU-1.jpg" class="imageall">
+<br>
+<br>
+<br>
+<font class="f4" size="6" face="Minion Pro,Calibri">
+Hi,
+I am Shivansh Jain and i'm writing an article for you all about top 5 processors for gaming and productivity under your budget. There are too many processors out there to choose from but only some of them worth that. I will suggest to wait till September 2020 because Ryzen 4000 series is coming out. They will feature you more cores and superior performance out of them. Intel make processor to only provide you with higher base clock and turbo clock speeds and also they are optimise for gaming. I would buy AMD processors because AMD gives you more cores and performance in less price. And if you dont have money to buy a large space SSD you can use Amd's Sense MI technology. It also support PCIe 4.0 which is blazing fast. But if you are eager to have a pc right now then let's see the best budget processors for you.
+</font>
+</p>
+<p align="left">
+<font class="f6" size="8" face="Minion Pro,Calibri">
+1. Ryzen 5 3600XT
+</font>
+</p>
+<p align="center">
+<img src="https://th.bing.com/th/id/OIP.wdKg6lVtEjLHk4eJiNAZnAHaCu?w=284&h=128&c=7&o=5&pid=1.7" class="imageall">
+<br>
+<br>
+<font class="f4" size="6" face="Minion Pro,Calibri">
+	Ryzen 5 3600XT is definately the best overall processor for productivity and gaming both.The XT series is a refresh to Ryzen's X series. This processor is a beast with only 6 cores and support for Simuntaneous Multi-Threading. It has a base clock of 3.8 GHz and turbo upto 4.8 GHz with a tdp of 95W. This processor beats core i5 10600k in productivity intensive programs like blender, photoshop, premier pro after effects, and also in Multi-threaded performance. Not only that, it beatsi5 9600k in gaming. This is the best processor I would suggest if you want to do  both gaming and cpu intensive tasks. This is unlocked too so you can overclock it.
+</font>
+</p>
+<p align="left">
+<font class="f6" size="8" face="Minion Pro,Calibri">
+2. Core i5-10600K
+</font>
+</p>
+<p align="center">
+<img src="https://th.bing.com/th/id/OIP.TBzZqIzq3oNJh_Z-VH_VrwHaEL?w=287&h=180&c=7&o=5&pid=1.7" class="imageall">
+<br>
+<br>
+<font class="f4" size="6" face="Minion Pro,Calibri">
+	Intel's core i5-10600K is the best if you only need to do high performance gaming. This is also a 6 core processor with 12 threads. This Processor comes with a base clock of 4.1 GHz and turbo upto 4.8 GHz with a very high tdp of 125W. You get super high framerates in AAA titles if you pair it with a RX 5600 XT or RTX 2060 like Witcher 3, Red Dead Redmption 2, Hitman, Shadow OF the Tomb Raider, Halo, Zelda, Call of Duty, and Grand Theft Auto 5, PUBG etc.  It also has integrated Intel UHD 630 Graphics with base frequency of 0.35 GHz. This is too a unlocked processor so you can overclock it upto super high clocks under sufficient cooling.
+</font>
+</p>
+<p align="left">
+<font class="f6" size="8" face="Minion Pro,Calibri">
+3. Ryzen 7 2700X
+</font>
+</p>
+<p align="center">
+<img src="download.jpg" class="imageall">
+<br>
+<br>
+<font class="f4" size="6" face="Minion Pro,Calibri">
+	AMD Ryzen 7 2700X is my choice if you want a heavy workstation. This processor come with 8 cores and 16 threads so that it can do Simuntaneous Multi-Threading. It has a base clock speed of 3.7 GHz and turbo clock speed of 4.3 GHz. This is a fully unlocked processor and allows you to overclock it. This processor come packaged with a Wraith Prism cooler which provides it a very efficient cooling under loads so you don't need to spent money on an aftermarket cpu cooler. This processor provide you almost more than the performance of Core i5-10600K in Multi-threading. You can do gaming with this too but the cores are not optimized for gaming still it can give you the similar performance to Core i5 8600K.
+</font>
+</p>
+<p align="left">
+<font class="f6" size="8" face="Minion Pro,Calibri">
+4. Core i5-9600K
+</font>
+</p>
+<p align="center">
+<img src="https://th.bing.com/th/id/OIP.NpdZEZdtdDGjMdD6ASNKmQHaFE?w=299&h=203&c=7&o=5&pid=1.7" class="imagehalf">
+<br>
+<br>
+<font class="f4" size="6" face="Minion Pro,Calibri">
+	Core i5-9600K is almost same in single core performance as i5-10600K but it does not support multi-threading and is priced at about 15,500 INR. This processor comes with 6 cores and 6 threads with a base clock of 3.7 GHz and a turbo clock of 4.6 GHz. This processor is also unlocked. This can provise almost same performance in gaming as a Ryzen 5 3600X but will remain backed in multi-threaded applications. This is a good choice if you want to save money on a processor and invest on a good graphics card this will not even bottlneck an RTX 2070. And is still a good choice for you on a low budget. 
+</font>
+</p>
+<p align="left">
+<font class="f6" size="8" face="Minion Pro,Calibri">
+5. Ryzen 5 3500X
+</font>
+</p>
+<p align="center">
+<img src="https://th.bing.com/th/id/OIP.6CzWYWJ6GpGsbIAW4kx6vgHaHa?w=168&h=180&c=7&o=5&pid=1.7" class="imagehalf">
+<br>
+<br>
+<font class="f4" size="6" face="Minion Pro,Calibri">
+	AMD Ryzen 5 3500X is the best processor for those who are on a super low budget this processor comes out to beat Core i5-9400F and a very good choice because it is comparable to Ryzen 5 3600 in gaming but is very backed in multi-threaded applications. It has 6 cores and 6 threads with a base clock of 3.6 GHz and a boost clock of 4.1 GHz. This processor is also unlocked. This processor has a price of 12,000 INR but you can only buy it from some sites as this processor is location specefic to China. But you can buy its non X varient which isn't location specific and costs approx 11,000 INR. This will not bottelneck an RX 5700 or RTX 2070. This is the best choice near 150$.
+</font>
+</p>
+<p align= "center">
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-instagram"></a>
+</p>
+<footer style="background-color:rgb(220,220,220);" align="center">Copyright ©2020 Cyberstorm - All Rights Reserved</footer>
+<style type="text/css">
+   .imageall{
+   	width: 900px
+   }
+   .imagehalf{
+    width: 500px
+   }
+  @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  .sidenav img {height: 100px;width:100px ;}
+   }
+  @media screen and (max-width: 600px) {
+  .search {width: 170px;}
+  .heading {font-size: 40px;}
+  .imageall{width: 100%}
+  .imagehalf{width: 90%}
+  .f4 {font-size: 20px;}
+  .f6 {font-size: 30px;}
+   }
+</style>
+</body>
+</html>

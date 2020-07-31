@@ -160,9 +160,9 @@ border-style : solid;
 .sidenav .closebtn {
 position: absolute;
 font-size: 36px;
-margin-left: 0px;
+margin-left: 0;
 padding: 4px 16px 4px 16px;
-z-index: 1
+z-index: 1;
 display: block;
 text-decoration: none;
 color: white;
@@ -177,16 +177,7 @@ border-width : 1px;
 border-style : solid;
 }
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-  .sidenav img {height: 100px;width:100px ;}
-}
-@media screen and (max-width: 600px) {
-.search {
-width: 170px;
-}
-}
+
 .fa {
   padding: 20px;
   font-size:30px;
@@ -204,7 +195,7 @@ width: 170px;
   color: white;
 }
 .fa-instagram {
-  background: #3f729b;
+  background: purple;
   color: white;
 }
 .fa-twitter {
@@ -223,19 +214,6 @@ function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
 /* Set the width of the side navigation to 250px */
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
@@ -246,21 +224,48 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
-<p style = "color : rgb(50,50,50);font-size:70px;" align = "center">
-Latest Articles
-</p>
 <br>
+<div class="themargin"><br><br></div>
+<div style = "color : rgb(50,50,50);font-size:100px;" align = "center">
+<label class="heading">
+  Latest Articles
+</label>
+</div>
 <!--Comment Here-->
 <div style="text-align:center;">
 <input class="search"required placeholder ="Search This Website" type = "text">
 </input>
-<img src="Search.png" height="22px" width="22px" style="margin:0px;"></img>
+<a href="#" style="text-decoration: none;color: black;">
+  <img src="Search.png" height="22px" width="22px" style="margin:0px;">
+  </img>
+</a>
 </div>
+<br>
+<div class="contdiv" align="center">
+  <div class="latestarticles">
+    <img src="AMD-Ryzen-4000-APU.jpg" height="180px" width="180px">
+    <label class="articlelabel">
+      <a href="Top 5 Processors For Gaming and Productivity.html">Top 5 Budget Processors For Gaming and Productivity</a>
+    </label>
+  </div>
+  <br>
+  <div class="latestarticles">
+    <label class="articlelabel">
+      <a href="#">cyjy</a>
+    </label>
+  </div>
+  <br>
+  <div class="latestarticles">
+    <label class="articlelabel">
+      <a href="#">mrll</a>
+    </label>
+  </div>
+</div>
+<br>
 <font face ="Lucida Calligraphy" size = "6">
 <br>
 Hi,
 <br>
-<script data-ad-client="ca-pub-8992199582848792" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <br>
 I am Shivansh Jain
 </font>
@@ -268,9 +273,44 @@ a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>
 <p align= "center">
 <a href="#" class="fa fa-facebook"></a>
 <a href="#" class="fa fa-youtube"></a>
-<a href="#" class="fa fa-instagram"></a>
 <a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-instagram"></a>
 </p>
-<footer style="background-color:rgb(220,220,220);" align="center">Cyberstorm - All Rights Reserved</footer>
+<footer style="background-color:rgb(220,220,220);" align="center">©2020 Cyberstorm - All Rights Reserved</footer>
+<style type="text/css">
+  .contdiv .latestarticles img {
+    float: left;
+  }
+  .articlelabel {
+  }
+  .latestarticles {
+    width: 80%;
+    background-color: rgb(70,70,70);
+    height: 180px;
+    text-align: left;
+    color: white;
+  }
+  .latestarticles a {
+    text-decoration: none;
+    color: rgb(210,210,210);
+    font-size: 40px;
+  }
+  .contdiv {
+    float: center;
+  }
+  @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  .sidenav img {height: 100px;width:100px ;}
+   }
+  @media screen and (max-width: 600px) {
+  .search {width: 170px;}
+  .heading {font-size: 55px;}
+  .latestarticles {width: 90%;height: 100px}
+  .contdiv .latestarticles img {height: 100px;width: 100px;}
+  .contdiv .latestarticles a {font-size: 20px;}
+  .contdiv .latestarticles label {margin-left: 5px;}
+  .themargin {display: none;}
+</style>
 </body>
 </html>
