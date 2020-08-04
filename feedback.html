@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CyberStorm.com</title>
+</head>
+<body>	
+<form method="post" action="send_mail.php">
+<br>
+<p class="heading">Feedback Form</p>
+<p>
+<input type="text" placeholder="Name" name="first_name" required> 
+</p>
+<p> 
+<input type="email" placeholder="E-mail" name="email_address">
+</p>
+<p>
+<textarea name="comments" placeholder="Type Feedback Here" maxlength="500"></textarea>
+</p>
+<p><button>Submit the form</button></p>
+<br>
+<br>
+<br>
+<br>
+<br>
+</form>
+<style type="text/css">
+	p {
+		text-align: center;
+	}
+	textarea {
+		height: 100px;
+		width: 50%;
+		max-height: 100px;
+		max-width : 50%;
+		min-height: 100px;
+		min-width: 50%;
+	}
+	input {
+
+		width: 50%;
+		max-width : 50%;
+		min-width: 50%;
+	}
+	body {
+		align-items: center;
+		background-image: url(aircraft-futuristic.jpg);
+		background-size: 100%;
+		background-position: center;
+    	height: 100%;
+    	width: 100%;
+	}
+	button,textarea,input:hover {
+		outline: none;
+		border: none;
+	}
+	button,textarea,input {
+		outline: none;
+		border: none;
+		color: black;
+		font-size: 16px;
+	}
+	button,textarea,input:focus {
+		outline: none;
+		border: none;
+	}
+	label {
+		font-size: 16px;
+		color: white;
+	}
+	button,textarea,input:active {
+		outline: none;
+		border: none;
+	}
+	textarea,input {
+		background-color: rgba(200,200,200,0.7);
+	}
+	.heading {
+		font-size: 90px;
+		color: white;
+	}
+	::placeholder {
+		color: black;
+	}
+</style>
+</body>
+</html>

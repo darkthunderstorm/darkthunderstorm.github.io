@@ -1,13 +1,297 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>
-		CyberStorm
-	</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="https://qravity.com/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://qravity.com/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://qravity.com/favicon/favicon-16x16.png">
+  <link rel="manifest" href="https://qravity.com/favicon/site.webmanifest">
+  <link rel="mask-icon" href="https://qravity.com/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="https://qravity.com/favicon/favicon.ico">
+  <meta name="apple-mobile-web-app-title" content="Qravity">
+  <meta name="application-name" content="Qravity">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="https://qravity.com/favicon/mstile-144x144.png">
+  <meta name="msapplication-config" content="https://qravity.com/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <title>CyberStorm</title>
+  <!--  critical css-->
+  <style>
+    body  {
+      background-color:#001c31;
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+      color: #e6e9ec;
+      text-align: left;
+      padding: 0;
+      margin: 0;
+      font-weight: normal;
+      -webkit-text-size-adjust: none;
+      overflow-x: visible !important;
+    }
+    svg {
+      display: none;
+    }
+  </style>
+<link href="style.css" rel="stylesheet"><style type="text/css"></style>
 </head>
 <body>
-	<div class="topnav">
-		
+	<!--<div id="root"></div>-->
+	<header class="header">
+		<div class="header-content">
+			<a class="logo-link" href="/">
+				<img src="https://qravity.com/static/media/qraviti_logo.526bb382.svg" alt="Qravity">
+			</a>
+			<input type="checkbox" id="id-btn-burger">
+			<label for="id-btn-burger">
+				<div>
+				</div>
+			</label>
+			<nav class="header-menu">
+				<div class="header-menu__content">
+					<div class="header-menu__item">
+						<a href="/about">
+							<i class="icon-a-icn-navigation-about">
+							</i>
+							<span>
+								About
+							</span>
+						</a>
+					</div>
+					<div class="header-menu__item">
+						<a href="/find-a-project">
+							<i class="icon-a-icn-navigation-explore">
+							</i>
+							<span>
+								Explore
+							</span>
+						</a>
+					</div>
+					<div class="header-menu__item">
+						<a href="/contact-us">
+							<i class="icon-a-icn-navigation-contact-us">
+							</i>
+							<span>
+								Contact Us
+							</span>
+						</a>
+					</div>
+					<div class="header-menu__item item-sign-in">
+						<a href="/sign-in">
+							<i class="icon-a-icn-navigation-sign-in">
+							</i>
+							<span>
+								Sign In
+							</span>
+						</a>
+					</div>
+					<div class="header-menu__item">
+						<a href="/sign-up">
+							<i class="icon-a-icn-navigation-sign-up">
+							</i>
+							<span>
+								Sign Up
+							</span>
+						</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<div class="wrap-msg-cookie">
+		<div class="container">
+			<div class="msg" data-error="Cookies are disabled. Your browser currently not accepting cookies">We’ve worked hard to minimise the use of cookies for this website because we want to respect your privacy. We only use the cookies that are strictly necessary to make the website work well and to help us improve in the future. By clicking YES, you agree to the use of our cookies.
+			</div>
+			<div class="wrap-btn">
+				<button class="btn btn-border btn-red full-width" type="button">
+					<span class="b-label">Yes, I accept the cookies
+					</span>
+					<span class="border">
+						<span>
+						</span>
+					</span>
+					<span class="bg">
+					</span>
+				</button>
+			</div>
+		</div>
 	</div>
+	<button class="btn btn-border btn-red link-bio" type="button">
+		<span class="b-label">
+			My Bio
+		</span>
+		<span class="border">
+			<span>
+			</span>
+		</span>
+		<span class="bg">
+		</span>
+	</button>
+	<a class="btn large gradient" href="SignUp.html">
+	Sign Up
+	</a>
+	<section class="landing-section wrap-subscription" id="subscribe"><div class="container"><h3 class="section-title">Subscribe for Qravity updates</h3><div class="info"><div class="info-content animate-item animated"><div class="wrap-form"><form class="form-subscribe"><div class="field-wrap input-field" data-error="This field is required" data-error-email="Enter a valid email address"><div class="field-wrapper"><input name="email" id="email" placeholder="Your email" class="full-width" type="text" value=""><label for="email">Your email</label><span class="field-icon-wrapper"><i class="icon icon-email"></i></span></div></div><div class="form-section wrap-btn"><button type="submit" class="btn btn-sign-up btn-pulse"><span><i class="icon-a-icn-btn-icon-only-arrow"></i></span></button></div></form></div></div></div></div>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-content">
+				<div class="footer-content__item logo-content">
+					<div class="footer-logo">
+						<img src="https://qravity.com/static/media/qraviti_logo_footer.9de598c5.svg" alt="Qravity">
+					</div>
+					<div class="footer-social-links">
+						
+						<a href="http://twitter.com/QravityCom" title="Twitter" class="btn btn-circle" target="_blank" rel="nofollow noopener">
+							<i class="icon-a-icn-social-twitter">
+							</i>
+						</a>
+						<a href="http://facebook.com/QravityOfficial" title="Facebook" class="btn btn-circle" target="_blank" rel="nofollow noopener">
+							<i class="icon-a-icn-social-facebook">
+							</i>
+						</a>
+						<a href="https://www.instagram.com/dark_thunderstorm_shiva/" title="Instagram" class="btn btn-circle" target="_blank" rel="nofollow noopener">
+							<i class="icon-a-icn-social-instagram">
+							</i>
+						</a>
+						<a href="http://exemple.com" title="Gmail" class="btn btn-circle" target="_blank" rel="nofollow noopener">
+							<i class="icon-a-icn-social-crypto">
+							</i>
+						</a>
+						<a href="http://linkedin.com/company/qravity" title="Linkedin" class="btn btn-circle" target="_blank" rel="nofollow noopener">
+							<i class="icon-a-icn-social-linkedin">
+							</i>
+						</a>
+						<a href="http://reddit.com/r/Qravity" title="Reddit" class="btn btn-circle" target="_blank" rel="nofollow noopener">
+							<i class="icon-a-icn-social-reddit">
+							</i>
+						</a>
+						<a href="http://youtube.com/channel/UCD4ecY9gj4crB3XZveUOH7A?view_as=subscriber" title="Youtube" class="btn btn-circle" target="_blank" rel="nofollow noopener">
+							<i class="icon-a-icn-social-youtube">
+							</i>
+						</a>
+						<a href="http://exemple.com" title="Github" class="btn btn-circle" target="_blank" rel="nofollow noopener">
+							<i class="icon-a-icn-social-github">
+							</i>
+						</a>
+					</div>
+				</div>
+				<div class="footer-content__item about-item">
+					<div class="title">
+						WHO WE ARE ??
+					</div>
+					<p>
+						We are a group that is preparing a forum and article website for you.
+					</p>
+				</div>
+				<div class="footer-content__item links-item">
+					<div class="title">
+					LINKS
+					</div>
+					<ul class="footer-links">
+						<li>
+							<a href="https://medium.com/qravity" title="Blog" class="btn btn-default" target="_blank" rel="nofollow noopener">
+								Blog
+							</a>
+						</li>
+						<li>
+							<a href="https://qravity.com/en/whitepaper/" title="White paper" class="btn btn-default" target="_blank" rel="nofollow noopener">
+								White paper
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-content__item contact-items">
+					<div class="title">
+						CONTACT US
+					</div>
+					<div class="contact-item">
+						<span class="icon-f">
+							<i class="icon icon-email">
+							</i>
+						</span>
+						<span>
+							darkthunderstormshiva@gmail.com
+						</span>
+				</div>
+				<div class="contact-item">
+					<span class="icon-f">
+						<i class="icon icon-phone">
+						</i>
+					</span>
+					<span>
+						+91 8003535435
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="footer-bottom__links">
+				<a href="/about" title="About" class="btn btn-default" target="_blank" rel="	nofollow noopener">
+					About
+				</a>
+				<a href="/find-a-project" title="Explore" class="btn btn-default" target="_blank" rel="nofollow noopener">
+					Explore
+				</a>
+				<a href="/contact-us" title="Contact Us" class="btn btn-default" target="_blank" rel="nofollow noopener">
+					Contact Us
+				</a>
+				<a href="/terms-and-conditions" title="Terms and Conditions" class="btn btn-default" target="_blank" rel="nofollow noopener">
+					Terms and Conditions
+				</a>
+				<a href="/imprint" title="Imprint" class="btn btn-default" target="_blank" rel="nofollow noopener">
+					Imprint
+				</a>
+				<a href="/privacy-policy" title="Privacy Policies" class="btn btn-default" target="_blank" rel="nofollow noopener">
+					Privacy Policies
+				</a>
+			</div>
+			<div class="footer-copyright">
+				© Qravity, 2020. All Rights Reserved.
+			</div>
+		</div>
+	</div>
+</footer>
+<script>
+    const adminToken = localStorage.getItem('adminToken')
+
+    const isHttps = 'true' === 'true'
+
+    const checkToken = function (token, cb) {
+      const url = 
+      fetch(url, {
+        method: "GET",
+        mode: 'cors',
+        headers: {
+          "demo-access-token": token,
+        }
+      })
+        .then(res => cb(null, res))
+        .catch(err => cb(err, null))
+    }
+
+    const authorize = function () {
+      const adminToken = prompt('Authorization')
+      checkToken(adminToken, function (err, res) {
+        if (err) {
+          setTimeout(authorize, 400)
+        } else {
+          localStorage.setItem('adminToken', adminToken)
+          window.location.href = '/'
+        }
+      })
+    }
+    
+
+    if (!adminToken && 'false' === 'true') {
+      document.getElementById('root').style.display = "none"
+      authorize()
+    }
+  </script>
+  <script type="text/javascript" src="https://qravity.com/static/js/main.5df60b97.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

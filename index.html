@@ -7,7 +7,8 @@ CyberStorm.com
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="icon" type="image/png" href="images/img-02.jpg"/>
+  <link rel="icon" type="image/png" href="images/img-02.jpg"/>
+<script data-ad-client="ca-pub-8992199582848792" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script data-ad-client="ca-pub-8992199582848792" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body style="background-color: rgb(220,220,220);">
@@ -36,7 +37,7 @@ Cyber Storm
 </div>
 </div>
 <style>
-.search:hover, .search:focus, .search.focus {
+.search:hover, .search:focus{
 border-color: transparent;
 outline:none;
 }
@@ -160,9 +161,9 @@ border-style : solid;
 .sidenav .closebtn {
 position: absolute;
 font-size: 36px;
-margin-left: 0;
+margin-left: 0px;
 padding: 4px 16px 4px 16px;
-z-index: 1;
+z-index: 1
 display: block;
 text-decoration: none;
 color: white;
@@ -176,13 +177,11 @@ border-color : rgb(255,255,255);
 border-width : 1px;
 border-style : solid;
 }
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-
 .fa {
-  padding: 20px;
-  font-size:30px;
-  width: 30px;
-  height: 30px;
+  padding: 17px;
+  font-size:25px;
+  width: 25px;
+  height: 25px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%; 
@@ -206,6 +205,12 @@ border-style : solid;
   background: red;
   color: white;
 }
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  .sidenav img {height: 100px;width:100px ;}
+}
 </style>
 <script>
 /* When the user clicks on the button,
@@ -214,6 +219,19 @@ function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
 /* Set the width of the side navigation to 250px */
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
@@ -224,23 +242,18 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
+<span  style="font-family:Sergoe">
+<p style = "color : rgb(50,50,50);font-size:100px;" align = "center">
+Latest Articles
+</p>
+</span>
 <br>
-<div class="themargin"><br><br></div>
-<div style = "color : rgb(50,50,50);font-size:100px;" align = "center">
-<label class="heading">
-  Latest Articles
-</label>
-</div>
 <!--Comment Here-->
 <div style="text-align:center;">
 <input class="search"required placeholder ="Search This Website" type = "text">
 </input>
-<a href="#" style="text-decoration: none;color: black;">
-  <img src="Search.png" height="22px" width="22px" style="margin:0px;">
-  </img>
-</a>
+<img src="Search.png" height="22px" width="22px" style="margin:0px;"></img>
 </div>
-<br>
 <div class="contdiv" align="center">
   <div class="latestarticles">
     <img src="AMD-Ryzen-4000-APU.jpg" height="180px" width="180px">
@@ -261,56 +274,60 @@ function closeNav() {
     </label>
   </div>
 </div>
-<br>
-<font face ="Lucida Calligraphy" size = "6">
-<br>
-Hi,
-<br>
-<br>
-I am Shivansh Jain
-</font>
-a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>
 <p align= "center">
 <a href="#" class="fa fa-facebook"></a>
 <a href="#" class="fa fa-youtube"></a>
 <a href="#" class="fa fa-twitter"></a>
 <a href="#" class="fa fa-instagram"></a>
 </p>
-<footer style="background-color:rgb(220,220,220);" align="center">©2020 Cyberstorm - All Rights Reserved</footer>
+<footer style="background-color:rgb(220,220,220);" align="center">Cyberstorm - All Rights Reserved</footer>
 <style type="text/css">
-  .contdiv .latestarticles img {
-    float: left;
+  .fa {
+    text-align: center;
+    vertical-align: middle;
   }
   .articlelabel {
   }
+  .latestarticles img {
+    float: left;
+  }
   .latestarticles {
     width: 80%;
-    background-color: rgb(70,70,70);
+    background-color: rgb(50,50,50);
     height: 180px;
-    text-align: left;
+    text-align: center;
     color: white;
+    float: center;
   }
   .latestarticles a {
     text-decoration: none;
     color: rgb(210,210,210);
-    font-size: 40px;
+    font-size: 35px;
   }
-  .contdiv {
-    float: center;
-  }
-  @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-  .sidenav img {height: 100px;width:100px ;}
-   }
   @media screen and (max-width: 600px) {
-  .search {width: 170px;}
   .heading {font-size: 55px;}
-  .latestarticles {width: 90%;height: 100px}
-  .contdiv .latestarticles img {height: 100px;width: 100px;}
+  .latestarticles {width: 90%;height: 105px}
+  .contdiv .latestarticles img {height: 105px;width: 105px;}
   .contdiv .latestarticles a {font-size: 20px;}
   .contdiv .latestarticles label {margin-left: 5px;}
   .themargin {display: none;}
+  .dropbtn {display: block;}
+  .dropbtn {font-size: 14px;}
+  .search {width: 170px;}
+  }
+  @media screen and (max-width:400px) {
+  .search {width: 150px;}
+  ::placeholder {font-size: 14px;}
+  ::-ms-input-placeholder {font-size: 14px;}
+  .heading {font-size: 40px;}
+  .latestarticles {width: 95%;height: 100px}
+  .contdiv .latestarticles img {height: 100px;width: 100px;}
+  .contdiv .latestarticles a {font-size: 17px;}
+  .contdiv .latestarticles label {margin-left: 5px;}
+  .themargin {display: none;}
+  .dropbtn {display: block;}
+  .fa {height: 15px; width: 15px; font-size: 15px; padding: 10px}
+  .dropbtn {padding: 8px 4px 8px 4px;font-size: 14px;}
 </style>
 </body>
 </html>
