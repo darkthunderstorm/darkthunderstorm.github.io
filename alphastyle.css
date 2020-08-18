@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Minion Pro;
+  src: url('fonts/poppins/Poppins-Regular.ttf'); 
+}
 @-webkit-keyframes rotating {
   from {
     -webkit-transform: rotate(0deg);
@@ -60,6 +64,69 @@
     border-width: 1px;
   }
 }
+.btn.gradient {
+    color: #e6e9ec;
+    background: linear-gradient(70deg, #253586 0%, #2d70b2 50%, #28e4e9 100%);
+    background-size: 162% auto;
+    background-position: 99%;
+}
+.btn.large {
+    font-size: 16px;
+    height: 64px;
+    line-height: 64px;
+    border-radius: 8px;
+}
+.btn {
+    width: 240px;
+    max-width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    padding: 0 16px;
+    margin: 0;
+    border: none;
+    outline: none;
+    user-select: none;
+    transition-duration: 0.3s;
+    vertical-align: top;
+    text-decoration: none;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    cursor: pointer;
+}
+.a {
+    color: #e6e9ec;
+    text-decoration: none;
+    outline: none;
+    user-select: none;
+    transition-duration: 0.3s;
+}
+.a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+.a, .a:before, .a:after {
+    box-sizing: inherit;
+}
+.a {
+    box-sizing: border-box;
+}
+user agent stylesheet
+.a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+    }
 .animate-item[data-animate="scale"] {
   transform: scale(0.8);
   transition: transform 0.8s;
@@ -7528,7 +7595,7 @@ button:focus {
 .wrap-popup__info .wrap-img a.link-profile {
   position: absolute;
   font-size: 24px;
-  right: 11%;
+  right: 11.5%;
   top: 0%;
   /*position: absolute;
   color: #0ff;
@@ -7635,5 +7702,5 @@ button:focus {
   width: calc(100% - 6px);
 }
 @media screen and (max-width:800px) {
-  .wrap-team-list__item {width: 50%;}
+  .wrap-team-list__item {width: 49%;}
 }

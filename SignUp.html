@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>CyberStorm.com</title>
+	<style type="text/css">
+	/*.container-login100 {
+		background-image: url(asd.png);
+    	background-size: cover;
+    	background-position: center;
+    }*/
+    .wrap-login100 {
+		background-image: url(asd.png);
+    	background-size: cover;
+    	background-position: center;
+    }
+    .input100 {
+    	background: -webkit-linear-gradient(left, #28e4e9 0%, #2d70b2 50%, #253586 100%);
+  		background: -o-linear-gradient(left, #28e4e9 0%, #2d70b2 50%, #253586 100%);
+  		background: linear-gradient(to right, #28e4e9 0%, #2d70b2 50%, #253586 100%);
+    }
+    ::placeholder {
+    opacity: 1;
+    background: -webkit-linear-gradient(#000000 0%,#000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  ::-ms-input-placeholder {
+    background: -webkit-linear-gradient(#000000 0%,#000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+	</style>
+	<title>ArcticStormX.com</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->
 	<link rel="icon" type="image/png" href="images/img-02.jpg"/>
-<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->	
 	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="mainup.css">
 </head>
 <body>
 	
@@ -27,14 +47,12 @@
 		<div class="container-login100">
 			<div class="wrap-login100">
 				<div class="login100-pic">
-					<img src="images/img-01.png" alt="IMG">
+					<img src="images\Wolf.png">
 				</div>
 
 				<form class="login100-form validate-form">
 					<span class="login100-form-title">
-						<font color="sky blue">
-						   Sign Up To Cyber Storm
-						</font>
+						   Sign Up To Arctic Storm X
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
@@ -49,14 +67,14 @@
 						<input class="input100" type="text" name="user" placeholder="Username">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
-							<i class="fa fa-lock" aria-hidden="true"></i>
+							<i class="fa fa-user" aria-hidden="true"></i>
 						</span>
 					</div>
 					<div class="wrap-input100 validate-input" data-validate = "Valid Phone Number is required">
 						<input class="input100" type="text" name="phone" placeholder="Phone Number">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
-							<i class="fa fa-lock" aria-hidden="true"></i>
+							<i class="fa fa-phone" aria-hidden="true"></i>
 						</span>
 					</div>
 					<div class="wrap-input100 validate-input" data-validate = "Password is required">
@@ -68,34 +86,24 @@
 					</div>
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							Sign In
+						<button class="login100-form-btn btn large gradient a">
+    						Sign Up
 						</button>
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
-	
-	
-
-	
-<!--===============================================================================================-->	
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
 	<script src="vendor/bootstrap/js/popper.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
 	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
 	<script src="vendor/tilt/tilt.jquery.min.js"></script>
 	<script >
 		$('.js-tilt').tilt({
 			scale: 1.1
 		})
 	</script>
-<!--===============================================================================================-->
 	<script src="js/main.js"></script>
-
 </body>
 </html>
