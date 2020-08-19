@@ -42,14 +42,12 @@
 	<link rel="stylesheet" type="text/css" href="mainup.css">
 </head>
 <body>
-	
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
 				<div class="login100-pic">
 					<img src="images\Wolf.png">
 				</div>
-
 				<form class="login100-form validate-form">
 					<span class="login100-form-title">
 						   Sign Up To Arctic Storm X
@@ -81,10 +79,17 @@
 						<input class="input100" type="password" name="pass" placeholder="Password">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
-							<i class="fa fa-lock" aria-hidden="true"></i>
+							<i class="fa fa-search" aria-hidden="true"></i>
 						</span>
 					</div>
-
+					<label class="container">
+						<input class="condition" type="checkbox" checked="checked">
+						<span class="checkmark"></span>
+						.........  I Agree To
+						<a href="#">
+							Terms And Conditions
+						</a>
+					</label>
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn btn large gradient a">
     						Sign Up
@@ -105,5 +110,79 @@
 		})
 	</script>
 	<script src="js/main.js"></script>
+	<style type="text/css" media="screen">
+		/* Customize the label (the container) */
+		.container {
+		  color: white;
+		  display: block;
+		  position: relative;
+		  text-align: center;
+		  margin-bottom: 0px;
+		  cursor: pointer;
+		  font-size: 14px;
+		  -webkit-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+		}
+		
+		/* Hide the browser's default checkbox */
+		.container input {
+		  position: absolute;
+		  opacity: 0;
+		  cursor: pointer;
+		  height: 0;
+		  width: 0;
+		}
+		
+		/* Create a custom checkbox */
+		.checkmark {
+		  position: absolute;
+		  top: 0;
+		  height: 22px;
+		  width: 22px;
+		  background-color: #eee;
+		}
+		
+		/* On mouse-over, add a grey background color */
+		.container:hover input ~ .checkmark {
+		  background-color: #ccc;
+		}
+		
+		/* When the checkbox is checked, add a blue background */
+		.container input:checked ~ .checkmark {
+		  background-color: #2196F3;
+		}
+		
+		/* Create the checkmark/indicator (hidden when not checked) */
+		.checkmark:after {
+		  content: "";
+		  position: absolute;
+		  display: none;
+		}
+		
+		/* Show the checkmark when checked */
+		.container input:checked ~ .checkmark:after {
+		  display: block;
+		}
+		
+		/* Style the checkmark/indicator */
+		.container .checkmark:after {
+		  left: 9px;
+		  top: 5px;
+		  width: 5px;
+		  height: 10px;
+		  border: solid white;
+		  border-width: 0 3px 3px 0;
+		  -webkit-transform: rotate(45deg);
+		  -ms-transform: rotate(45deg);
+		  transform: rotate(45deg);
+		}
+		@media screen and (max-width: 400px) {
+			.focus-input100 {
+				display: none;
+			}
+		}
+	</style>
 </body>
-</html>
+</html> 

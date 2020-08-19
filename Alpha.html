@@ -214,7 +214,7 @@ border-style : solid;
 	opacity: 0.7;
 }
 .fa-facebook {
-	background: #3B5998;
+	background: linear-gradient(45deg, #0000FF 0%, #3B5998 100%);
 	color: white;
 }
 .fa-instagram {
@@ -269,53 +269,6 @@ text-align: center;
 	margin: 0;
 }
 </style>
-<script>
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-	 document.getElementById("articlelist").classList.toggle("show");
-}
-function filter() {
-	// Declare variables
-  var input, filter, ul, li, a, i, txtValue;
-  input = document.getElementById('filterbox');
-  filter = input.value.toUpperCase();
-  ul = document.getElementById("filter");
-  li = ul.getElementsByTagName('li');
-
-  // Loop through all list items, and hide those who don't match the search query
-  for (i = 0; i < li.length; i++) {
-    a = li[i].getElementsByClassName("filteritem")[0];
-    txtValue = a.textContent || a.innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
-    }
-  }
-}
-window.onclick = function(event) {
-  if (!event.target.matches('.search')) {
-    var dropdowns = document.getElementsByClassName("bb");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-/* Set the width of the side navigation to 250px */
-function openNav() {
-	document.getElementById("mySidenav").style.width = "225px";
-}
-
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-	document.getElementById("mySidenav").style.width = "0";
-}
-</script>
 <div style="text-align: center;">
 	<a class="btn large gradient a" href="SignUp.html">
 		Sign Up
@@ -343,6 +296,7 @@ function closeNav() {
 				</li>
 				<li>
 					<a class="filteritem" href="Top 5 Processors For Gaming and Productivity.html">Top 5 Budget Processors For Gaming and Productivity</a>
+					<a class="noresult" style="display: none">No Search Results</a>
 				</li>
 			</ul>
 		</div>
@@ -407,7 +361,7 @@ function closeNav() {
 						</div>
 						<button class="btn btn-border btn-red link-bio" type="button">
 							<span class="b-label">
-								My Bio
+								Bio
 							</span>
 							<span class="border">
 								<span>
@@ -433,7 +387,7 @@ function closeNav() {
 						</div>
 						<button class="btn btn-border btn-red link-bio" type="button">
 							<span class="b-label">
-								My Bio
+								Bio
 							</span>
 							<span class="border">
 								<span>
@@ -466,7 +420,7 @@ function closeNav() {
 						</div>
 						<button class="btn btn-border btn-red link-bio" type="button">
 							<span class="b-label">
-								My Bio
+								Bio
 							</span>
 							<span class="border">
 								<span>
@@ -496,7 +450,7 @@ function closeNav() {
 						</div>
 						<button class="btn btn-border btn-red link-bio" type="button">
 							<span class="b-label">
-								My Bio
+								Bio
 							</span>
 							<span class="border">
 								<span>
@@ -513,10 +467,10 @@ function closeNav() {
 </div>
 <p align= "center">
 <a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-youtube"></a>
+<a href="https://www.youtube.com/channel/UCg3nrwcNmnCfR5HWS3tUR_w" class="fa fa-youtube"></a>
 <a href="#" class="fa fa-twitter"></a>
 <a href="#" class="fa fa-instagram"></a>
-<div class="ffff" style="background-color:rgb(50,50,50);color: rgb(220,220,220);" align="center">©2020 ArcticStormX - All Rights Reserved</div></p>
+<div class="ffff" style="background-color:rgb(50,50,50);color: rgb(220,220,220);" align="center">Copyright ©2020 ArcticStormX - All Rights Reserved</div></p>
 <style type="text/css">
 	.codiv .containdiv .thenewarticles img {
 		padding-top: 5px;
@@ -533,12 +487,15 @@ function closeNav() {
 		background-image: url(351621.jpg);
 		background-size: cover;
 		background-position: center;
+		width: 100%; 
+	}
+	body {
+		margin: 0;
 	}
 	.cthctgh {
 		background-image: url(4k-abstract-wallpapers.jpg);
 		background-size: cover;
 		background-position: center;
-		height: 80%;
 		width: 100%;
 	}
 	.fa {
@@ -663,5 +620,52 @@ function closeNav() {
 	-webkit-text-fill-color: transparent;
  }
 </style>
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+	 document.getElementById("articlelist").classList.toggle("show");
+}
+function filter() {
+	// Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('filterbox');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("filter");
+  li = ul.getElementsByTagName('li');
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByClassName("filteritem")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.search')) {
+    var dropdowns = document.getElementsByClassName("bb");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+/* Set the width of the side navigation to 250px */
+function openNav() {
+	document.getElementById("mySidenav").style.width = "225px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+	document.getElementById("mySidenav").style.width = "0";
+}
+</script>
 </body>
 </html>
