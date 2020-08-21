@@ -33,6 +33,7 @@ box-shadow: 0px 8px 16px 0px; rgba(0,0,0,0.2);
 z-index: 1;
 text-align: center;
 align-self: center;
+right: 0;
 }
 .bb a {
 color: black;
@@ -296,7 +297,9 @@ text-align: center;
 				</li>
 				<li>
 					<a class="filteritem" href="Top 5 Processors For Gaming and Productivity.html">Top 5 Budget Processors For Gaming and Productivity</a>
-					<a class="noresult" style="display: none">No Search Results</a>
+				</li>
+				<li>
+					<a class="filteritem noresult" style="display: none">No Search Results</a>
 				</li>
 			</ul>
 		</div>
@@ -628,7 +631,7 @@ function myFunction() {
 }
 function filter() {
 	// Declare variables
-  var input, filter, ul, li, a, i, txtValue;
+  var input, filter, ul, li, a, i, txtValue, noResult;
   input = document.getElementById('filterbox');
   filter = input.value.toUpperCase();
   ul = document.getElementById("filter");
